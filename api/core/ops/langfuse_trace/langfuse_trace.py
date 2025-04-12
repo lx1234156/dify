@@ -46,7 +46,7 @@ class LangFuseDataTrace(BaseTraceInstance):
             secret_key=langfuse_config.secret_key,
             host=langfuse_config.host,
         )
-        self.file_base_url = os.getenv("FILES_URL", "http://127.0.0.1:5001")
+        self.file_base_url = os.getenv("FILES_URL", "http://10.10.10.215:5001")
 
     def trace(self, trace_info: BaseTraceInfo):
         if isinstance(trace_info, WorkflowTraceInfo):
