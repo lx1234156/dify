@@ -77,7 +77,7 @@ services:
     environment:
       # Use the shared environment variables.
       DB_HOST: ${DB_HOST:-dify_db}
-      DB_PORT: ${DB_PORT:-5433}
+      DB_PORT: ${DB_PORT:-5432}
       DB_USERNAME: ${DB_USER:-postgres}
       DB_PASSWORD: ${DB_PASSWORD:-difyai123456}
       DB_DATABASE: ${DB_PLUGIN_DATABASE:-dify_plugin}
