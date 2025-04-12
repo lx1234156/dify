@@ -168,7 +168,7 @@ class AccountService:
         if account.status == AccountStatus.PENDING.value:
             account.status = AccountStatus.ACTIVE.value
             account.initialized_at = datetime.now(UTC).replace(tzinfo=None)
-
+        TenantService.create_owner_tenant_if_not_exist(account=account)
         db.session.commit()
 
         return cast(Account, account)
