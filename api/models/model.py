@@ -1744,7 +1744,7 @@ class DatasetRetrieverResource(Base):
     position = db.Column(db.Integer, nullable=False)
     dataset_id = db.Column(StringUUID, nullable=False)
     dataset_name = db.Column(db.Text, nullable=False)
-    document_id = db.Column(StringUUID, nullable=True)
+    document_id = db.Column(db.Text, nullable=True)
     document_name = db.Column(db.Text, nullable=False)
     data_source_type = db.Column(db.Text, nullable=True)
     segment_id = db.Column(StringUUID, nullable=True)
