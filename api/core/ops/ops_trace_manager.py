@@ -358,7 +358,7 @@ class TraceTask:
         self.conversation_id = conversation_id
         self.user_id = user_id
         self.timer = timer
-        self.file_base_url = os.getenv("FILES_URL", "http://10.10.10.215:5001")
+        self.file_base_url = os.getenv("FILES_URL", "http://218.2.227.226:15001")
         self.app_id = None
 
         self.kwargs = kwargs

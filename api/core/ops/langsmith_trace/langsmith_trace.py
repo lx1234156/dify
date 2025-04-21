@@ -44,7 +44,7 @@ class LangSmithDataTrace(BaseTraceInstance):
         self.project_name = langsmith_config.project
         self.project_id = None
         self.langsmith_client = Client(api_key=langsmith_config.api_key, api_url=langsmith_config.endpoint)
-        self.file_base_url = os.getenv("FILES_URL", "http://10.10.10.215:5001")
+        self.file_base_url = os.getenv("FILES_URL", "http://218.2.227.226:15001")
 
     def trace(self, trace_info: BaseTraceInfo):
         if isinstance(trace_info, WorkflowTraceInfo):
